@@ -1,0 +1,40 @@
+The Project: Personal Task Management System (CLI)
+Build a command-line interface (CLI) program that allows you to manage a To-Do list. This project is excellent because it requires you to store data (Lists/Dictionaries), manipulate that data (Loops), and organize your code into reusable units (Functions).
+
+Core Requirements
+Your program should allow a user to perform these four actions via a menu loop:
+
+Add a Task: Store a task name and its priority (e.g., "High", "Medium", "Low") in a dictionary, then add that dictionary to a main list.
+
+View All Tasks: Iterate through your list and print each task clearly.
+
+Delete a Task: Remove a task by its name or index.
+
+Filter by Priority: Create a new list containing only tasks of a specific priority level.
+
+Why this boosts your skills
+Data Structures: You will store tasks as dictionaries (for structure) inside a list (for collection).
+
+Logic: You will use if/elif/else to process user menu choices.
+
+Iteration: You will use for loops to display and filter your data.
+
+Functions: You must wrap each feature (add, view, delete, filter) into its own def block.
+
+Implementation Breakdown
+To ensure you are sharpening your skills, follow this structural template:
+
+main() function: Create a while True: loop here that prints the menu and asks for user input. Use an if/elif/else chain to call your specific feature functions.
+
+add_task(task_list): Ask the user for inputs, create a dictionary, and use list.append().
+
+view_tasks(task_list): Use a for loop to iterate through the list. If the list is empty, use an if statement to print a friendly "No tasks yet!" message.
+
+filter_tasks(task_list, priority): This will challenge you to create a new list inside the function using a for loop and an if condition to check the priority value.
+
+Midterm Preparation Tips
+Type Hinting: Start adding type hints to your function signatures (e.g., def add_task(tasks: list) -> None:). Professors love this, and it helps you keep track of your data types.
+
+Error Handling: Add a try/except block to your input section to prevent the program from crashing if a user enters something unexpected.
+
+Docstrings: Underneath your def line, add triple quotes ("""Docstring here""") to explain what the function does.
