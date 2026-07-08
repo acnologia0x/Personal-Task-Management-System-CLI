@@ -2,20 +2,20 @@ to_Do_List = []
 
 def add_Task(recieved_List):
     task_Name = input("What to do: ")
-    priority = input("Task Priority(1.High, 2.Medium, 3.Low): ")
+    priority = input("Task Priority(High, Medium, Low): ")
     new_Task = {
         'task' : task_Name,
         'pri' : priority
     }   
     recieved_List.append(new_Task)
 
-def view_Task(revcieved_List):
-        if len(revcieved_List) == 0:
+def view_Task(recieved_List):
+        if len(recieved_List) == 0:
             print("You have no task!")
         else:
-            for tasks in revcieved_List:
-                print(tasks)
-
+            print("{:<15}{:<10}".format("Task", "Priority"))
+            for tasks in recieved_List:
+                print("{:<15}{:<10}".format(tasks["task"], tasks["pri"]))
 def menu():
     print("1. Add a Task.")
     print("2. View All Tasks.")
