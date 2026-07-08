@@ -8,6 +8,14 @@ def add_Task(recieved_List):
         'pri' : priority
     }   
     recieved_List.append(new_Task)
+
+def view_Task(revcieved_List):
+        if len(revcieved_List) == 0:
+            print("You have no task!")
+        else:
+            for tasks in revcieved_List:
+                print(tasks)
+
 def menu():
     print("1. Add a Task.")
     print("2. View All Tasks.")
@@ -21,6 +29,8 @@ def main():
         user_input = input("Select an option(1-5): ")
         if user_input == '1':
             add_Task(to_Do_List)
+        if user_input == '2':
+            view_Task(to_Do_List)
         elif user_input == '5':
             break
 
