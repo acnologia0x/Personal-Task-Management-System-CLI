@@ -11,7 +11,9 @@ def add_Task(recieved_List):
 
 def view_Task(recieved_List):
         if len(recieved_List) == 0:
+            print("-------------------")
             print("You have no task!")
+            print("===================")
         else:
             print("{:<15}{:<10}".format("Task", "Priority"))
             for tasks in recieved_List:
@@ -22,7 +24,6 @@ def menu():
     print("3. Delete a Task.")
     print("4. Filter by Priority.")
     print("5. Exit.")
-
 def main():
     while True:
         menu()
@@ -33,7 +34,6 @@ def main():
             view_Task(to_Do_List)
         elif user_input == '5':
             break
-
 # REVERT
 # <================================================MAIN PROGRAM STARTS HERE================================================>
 main()
