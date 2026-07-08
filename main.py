@@ -23,8 +23,5 @@ def main():
             add_Task(to_Do_List)
         elif user_input == '5':
             break
-def test(){
-    print("TEST")
-}
 # <================================================MAIN PROGRAM STARTS HERE================================================>
-test()
+main()
